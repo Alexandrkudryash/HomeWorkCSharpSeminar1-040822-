@@ -2,7 +2,8 @@
 // ДЗ к Семинару 1 от 04.08.2022 
 //Console.WriteLine("Hello, World!");
 
-Console.WriteLine("Введите три числа");
+Console.Clear();
+Console.WriteLine("Введите три числа" ?? "0");
 int a = int.Parse(Console.ReadLine());
 int b = int.Parse(Console.ReadLine());
 int c = int.Parse(Console.ReadLine());

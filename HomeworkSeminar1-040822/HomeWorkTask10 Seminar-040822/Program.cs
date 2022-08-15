@@ -1,13 +1,14 @@
 ﻿// Задача-10: Выяснить кратно ли число заданному, если нет, вывести остаток
 // ДЗ к Семинару 1 от 04.08.2022
 
+Console.Clear();
 int a = 15;
 
 Console.Write("Задано число, оно составляет = ");
 Console.WriteLine(a);
 
 Console.WriteLine("Введите любое число");
-int b = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine() ?? "0");
 
 if (b%a == 0) Console.WriteLine("Введенное Вами число кратно заданному числу" );
 else
